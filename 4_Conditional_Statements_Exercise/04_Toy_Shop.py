@@ -10,11 +10,10 @@ price_doll = 3
 price_bear = 4.10
 price_minion = 8.20
 price_truck = 2
-
-all_toys_price = ((number_puzzle * price_puzzle) + (number_dolls * price_doll)
-            + (number_bears * price_bear) + (price_truck * price_truck))
-number_toys = number_puzzle + number_dolls + number_bears + number_minions + number_trucks
-if number_toys >= 50:
-    all_toys_price = all_toys_price * 0.75
-
-print(all_toys_price)
+# сметки:
+order_price = ((number_puzzle * number_puzzle) + (number_dolls * number_dolls)
+               + (number_bears * number_bears) + (number_minions * number_minions) + (number_trucks * number_trucks))
+order_toys = number_puzzle + number_dolls + number_bears + number_minions + number_trucks
+if order_toys >= 50:
+    discount = order_price * 0.25
+rent =
